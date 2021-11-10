@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		.trash{
+			height: 100px;
+			width: 100px;
+			top: 50%;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url("trash.png");
+
+
+		}
+
+		.Kevin{
+			height: 100px;
+			width: 175px;
+			top: 55%;
+			background-image: url("Kevin.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-grid;
+		}
+		.Jets{
+			height: 100px;
+			width: 100px;
+			top: 55%;
+			background-image: url("Jets.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-grid;
+		}
+
+		#steak{
+			height: 200px;
+			width: 200px;
+			top: 300px;
+			left: 300px;
+			background-image: url("Steak.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-grid;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+click to find out
+<div class="trash"></div>
+<di id="steak"></div>
+
+	<script type="text/javascript">
+
+			addEventListener("click", function Trash1(){
+				var Jets = document.createElement("div")
+					document.body.appendChild(Jets)
+					Jets.classList.add("Jets")
+
+
+		});
+			addEventListener("click", function Trash(){
+				var Kevin = document.createElement("div")
+					document.body.appendChild(Kevin)
+					Kevin.classList.add("Kevin")
+
+
+		});
+		
+
+
+
+	</script>
+
+
+</body>
+</html>
