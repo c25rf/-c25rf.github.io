@@ -8,7 +8,6 @@
 		.trash{
 			height: 100px;
 			width: 100px;
-			top: 50%;
 			background-position: center;
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -20,7 +19,8 @@
 		.Kevin{
 			height: 100px;
 			width: 175px;
-			top: 55%;
+			top: -115px;
+			left: -100px;
 			background-image: url("Kevin.png");
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -30,7 +30,8 @@
 		.Jets{
 			height: 100px;
 			width: 100px;
-			top: 55%;
+			top: -115px;
+			left: -100px;
 			background-image: url("Jets.png");
 			background-size: contain;
 			background-position: center;
@@ -40,16 +41,28 @@
 		}
 
 		#steak{
-			height: 200px;
+			height: 100px;
 			width: 200px;
-			top: 300px;
-			left: 300px;
+			top: -85px;
+			left: 1225px;
 			background-image: url("Steak.png");
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;
 			position: relative;
 			display: inline-grid;
+		}
+		#space{
+			height: 10px;
+			width: 10px;
+			position: relative;
+			top: -190px;
+			left: 1250px;
+			display: inline-block;
+
+		}
+		.lit{
+			
 		}
 
 
@@ -58,9 +71,10 @@
 </head>
 <body>
 
-click to find out
+click
 <div class="trash"></div>
-<di id="steak"></div>
+<div id="space"> press space </div>
+<div id="steak"></div>
 
 	<script type="text/javascript">
 
@@ -78,6 +92,11 @@ click to find out
 
 
 		});
+
+			addEventListener("keypress", function steak(){
+				var Lit = document.createElement("div")
+					document.body.appendChild(Lit)
+					Lit.classList.add("Lit")
 		
 
 
