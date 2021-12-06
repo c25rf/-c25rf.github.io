@@ -19,8 +19,8 @@
 		.Kevin{
 			height: 100px;
 			width: 175px;
-			top: -115px;
-			left: -100px;
+			top: -120px;
+			left: -25px;
 			background-image: url("Kevin.png");
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -30,8 +30,8 @@
 		.Jets{
 			height: 100px;
 			width: 100px;
-			top: -115px;
-			left: -100px;
+			top: -120px;
+			left: -25px;
 			background-image: url("Jets.png");
 			background-size: contain;
 			background-position: center;
@@ -43,7 +43,7 @@
 		#steak{
 			height: 100px;
 			width: 200px;
-			top: -85px;
+			top: -90px;
 			left: 1225px;
 			background-image: url("Steak.png");
 			background-size: contain;
@@ -56,13 +56,21 @@
 			height: 10px;
 			width: 10px;
 			position: relative;
-			top: -190px;
+			top: -192px;
 			left: 1250px;
 			display: inline-block;
 
 		}
-		.lit{
-			
+		.Lit{
+			height: 100px;
+			width: 200px;
+			left: 1225px;
+			top: -90px;
+			background-image: url("Lit.png");
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
 		}
 
 
@@ -93,10 +101,12 @@ click
 
 		});
 
-			addEventListener("keypress", function steak(){
+			addEventListener("keypress", function Steak(){
 				var Lit = document.createElement("div")
 					document.body.appendChild(Lit)
 					Lit.classList.add("Lit")
+
+		});
 		
 
 

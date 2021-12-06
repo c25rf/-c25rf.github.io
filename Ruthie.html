@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			font-size: 75px;
+		}
+
+		#young{
+			height: 750px;
+			width: 750px;
+			background-image: url("young.png");
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			font-size: 120px;
+
+
+		}
+
+		.Old{
+			height: 750px;
+			width: 750px;
+			top: -750px;
+			background-image: url("old.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			display: inline-grid;
+			background-position: center;
+
+					}
+
+	</style>
+
+</head>
+<body>
+
+click
+to go from young to old
+<div id="young"></div>
+
+	<script type="text/javascript">
+
+
+			addEventListener("click", function Young(){
+				var young = document.getElementById("young")
+				var Old = document.createElement("div")
+					document.body.appendChild(Old)
+					Old.classList.add("Old")
+					young.style.opacity = "0%";
+
+
+		});
+		
+
+
+
+	</script>
+
+
+</body>
+</html>

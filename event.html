@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		body{
+
+			background-color: sienna;
+		}
+	</style>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+var number = 0;
+
+document.addEventListener("keypress", function(event){
+	number = number +1;
+
+	var x = document.createElement("div")
+	document.body.appendChild(x);
+
+	x.id = number
+	x.style.display = "inline-block";
+	x.style.width = "100px";
+	x.style.height = "100px";
+	x.style.backgroundSize = "cover";
+
+	x.style.backgroundImage = "url(" + number + ".png)";
+
+	console.log(event);
+
+	if (number%3 ==0) {
+		number = 0;
+	}
+
+	// if (event.key =="2") {
+	// 	x.innerText = "hello"
+	// }
+
+	// else if (event.key !=="2") {
+	// 	x.innerText = "not hello"
+	// }
+
+
+})
+
+</script>
+
+</body>
+</html>
