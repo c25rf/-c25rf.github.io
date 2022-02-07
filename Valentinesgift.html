@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    html {
+        background-color: #ff66cc;
+    }
+    .heart {
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        display: inline-block;
+        font-family: 'Cambria', cursive;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        transition: 1s;
+    }
+
+    .pic {
+        background-image: url("Heart.png");
+
+
+    }
+
+    h1 {
+        font-family: 'Cambria', cursive;
+        position: relative;
+    }
+
+    h2 {
+        position: fixed;
+        font-family: 'Cambria', cursive;
+        bottom: 0;
+        right: 50px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <h1>I love you because...</h1>
+    <h2>From, Ryan</h2>
+    <script type="text/javascript">
+    function Heart(i) {
+
+
+        var heart = document.createElement("heart");
+
+        document.body.appendChild(heart);
+        heart.classList.add("heart");
+        heart.classList.add("pic");
+        document.body.appendChild(heart);
+
+        heart.addEventListener("click", function() {
+            function remove() {
+                heart.classList.remove("pic");
+                heart.innerHTML = array[i];
+            };
+
+            function add() {
+                heart.classList.add("pic");
+                heart.innerHTML = "";
+            }
+            remove();
+            setTimeout(add, 2000)
+            console.log(event);
+        });
+
+
+        function move() {
+            heart.style.left = Math.round(Math.random() * 70) + "px";
+            heart.style.top = Math.round(Math.random() * 60) - 30 + "px";
+
+        };
+
+        setTimeout(move, 1);
+        setInterval(move, 1000);
+
+
+    };
+
+    var array = ["you make me feel loved",
+        "you get me food",
+        "you help take care of Hibachi",
+        "your presents are great",
+        "you always make me work hard",
+        "you always come to my games",
+        "you support me in everything I do", "you are a poetry major"
+    ];
+
+    for (var i = 0; i <= array.length - 1; i++) {
+        Heart(i);
+    }
+    </script>
+</body>
+
+</html>
