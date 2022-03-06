@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.Bob{
+			height: 300px;
+			width: 800px;
+		}
+
+		#red{
+			background-color: red;
+			font-family: "Brush Script MT";
+			font-size: 60px;
+		}
+		#green{
+			background-color: green;
+			font-family: "Kalam", monospace;
+			font-size: 50px;
+		}
+		#yellow{
+			background-color: yellow;
+			font-family: "Courier New", monospace;
+			font-size: 80px;
+		}
+	
+
+	</style>
+</head>
+<body>
+<div id=link>My website</div>
+<div class="Bob" id="red"> Hi, this is the red div</div>
+<div class="Bob" id="yellow"> Hi, this is the yellow div</div>
+<div class="Bob" id="green"> Hi, this is the green div</div>
+
+<script type="text/javascript">
+	
+	var red = document.getElementById("red")
+	var green = document.getElementById("green")
+
+	red.addEventListener("click", function() {
+
+		red.style.opacity = "0%";
+
+
+
+
+	})
+
+
+
+	green.addEventListener("click", function() {
+
+		green.style.backgroundColor = "blue";
+
+
+
+
+
+
+	})
+	var x = 0
+	
+	green.addEventListener("click", function(){
+
+		
+		var x = x+1
+
+		console.log(x)
+
+		if (x==2) {
+			green.style.backgroundColor = "purple";
+		}
+
+	})
+
+</script>
+
+
+</body>
+</html>

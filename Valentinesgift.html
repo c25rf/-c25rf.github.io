@@ -12,13 +12,13 @@
 
         background-size: contain;
         background-repeat: no-repeat;
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
         position: relative;
         display: inline-block;
-        font-family: 'Cambria', cursive;
+        font-family: Cambria, cursive;
         text-align: center;
-        font-size: 16px;
+        font-size: 28px;
         margin: 20px;
         position: relative;
         display: inline-block;
@@ -33,13 +33,13 @@
     }
 
     h1 {
-        font-family: 'Cambria', cursive;
+        font-family: Cambria, cursive;
         position: relative;
     }
 
     h2 {
         position: fixed;
-        font-family: 'Cambria', cursive;
+        font-family: Cambria, cursive;
         bottom: 0;
         right: 50px;
     }
@@ -69,7 +69,7 @@
 
             function add() {
                 heart.classList.add("pic");
-                heart.innerHTML = "";
+                heart.innerText = "";
             }
             remove();
             setTimeout(add, 2000)
@@ -78,7 +78,7 @@
 
 
         function move() {
-            heart.style.left = Math.round(Math.random() * 280) + "px";
+            heart.style.left = Math.round(Math.random() * 200) -20 + "px";
             heart.style.top = Math.round(Math.random() * 240) +100 + "px";
 
         };
@@ -98,7 +98,7 @@
         "you support me in everything I do", "you are a poetry major"
     ];
 
-    for (var i = 0; i <= array.length - 1; i++) {
+    for (var i = 0; i <= array.length - 1; i=i+1) {
         Heart(i);
     }
     </script>

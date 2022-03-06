@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+			background-color: lightblue;
+		}
+		
+		#text{
+			font-size: 50px;
+			left: 500px;
+			position: absolute;
+
+
+		}
+
+		#phone{
+			height: 250px;
+			width: 250px;
+			background-image: url(phone.png);
+			transition: 3s;
+			background-size: cover;
+			font-size: 20px;
+
+
+		}
+		#phone:hover{
+			height: 250px;
+			width: 250px;
+			background-image: url(https://i.pinimg.com/originals/f2/49/4a/f2494ac1c7305b0212cc86e167a1f47f.gif);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: 3s;
+}
+
+		#fphone{
+			height: 250px;
+			width: 250px;
+			background-image: url(https://i5.walmartimages.com/asr/6b1c79b8-71fb-4cef-8ca3-7576a2e353c9_5.40b380b4ff9a88c106f89c6f3383360f.png);
+			transition: 3s;
+			background-size: cover;
+			font-size: 20px;
+
+
+		}
+		#fphone:hover{
+			height: 250px;
+			width: 250px;
+			background-image: url(https://c.tenor.com/qdg13PqYbxMAAAAM/yes-baby.gif);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: 3s;
+
+}
+
+		.vihaan{
+			height: 350px;
+			width: 350px;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-image: url(vihaan.png);
+			position: absolute;
+			display: inline-block;
+
+
+		}
+	</style>
+
+</head>
+<body>
+
+<div id=text>Click to place Vihaans</div>
+
+<div id="phone">Hover:</div>
+<div id="fphone">Hover:</div>
+
+
+
+<script type="text/javascript">
+	
+
+	document.addEventListener("click", function(event) {
+		var vihaan = document.createElement("div")
+			document.body.appendChild(vihaan)
+			vihaan.classList.add("vihaan");
+
+		console.log(event.clientX, event.clientY);
+
+		vihaan.style.left = event.clientX-175+"px";
+		vihaan.style.top = event.clientY-175+"px";
+
+		
+  })
+
+</script>
+
+</body>
+</html>
