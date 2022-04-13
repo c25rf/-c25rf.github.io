@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		/*this is the section that creates the sty for the image that is my tom and jerry image*/
+
+		.virus{
+			background-image: url(https://m.media-amazon.com/images/M/MV5BMTQ3ZGIzNjMtYWJhMC00MDRhLTgyYWItMjBjNzM0MTIzM2JlXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg);
+			width: 75px;
+			height: 75px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+	}
+
+
+
+
+	</style>
+</head>
+<body>
+
+<!-- this section adds the counter and the text above the counter -->
+
+<p>Tom and Jerry Counter</p>
+<input id="input">
+<audio id="sound"> src="</audio>
+<script type="text/javascript">
+
+// sets variables for counter
+	
+	var input = document.getElementById('input');
+	var x = 0
+
+// creates divs for pictures
+
+	function createCorona() {
+		var corona = document.createElement('div');
+		document.body.appendChild(corona);
+		corona.classList.add("virus");
+
+// changes position of pictures
+
+	function changePosition() {
+		corona.style.left = 1000*Math.random() + "px";
+		corona.style.top = 1000*Math.random() + "px";
+	};
+
+// gets rid of pictures on click and updates the counter
+
+	corona.addEventListener("click", function() {
+		console.log("hi");
+		x = x + 1;
+		input.value = x;
+		corona.classList.remove("virus");
+		corona.style.opacity = "0";
+	})
+
+// Runs functions
+
+	setInterval(changePosition, 2000)
+
+
+
+
+	};
+
+	setInterval(createCorona, 1000);
+
+</script>
+
+
+</body>
+</html>
